@@ -1,6 +1,7 @@
 import {useState, useRef, useEffect} from 'react'
 import './App.css';
 import {SideMenu} from '../SideMenu/SideMenu';
+import {InfoDiv} from '../InfoDiv/InfoDiv'
 import { checkPassword } from "../../utils/checkPassword";
 import {
   colors,
@@ -14,8 +15,10 @@ function App() {
   const [inputColor, setInputColor] = useState(colors.default);
   const [bgColor, setBgColor] = useState(bg_colors.default);
   const [inputState, setInputState] = useState(input_state.default);
+  const [visibility, setVisibility] = useState(input_visibility.invisible);
 
   const [bgColorEnabled, setBgColorEnabled] = useState(true);
+  const [infoDivEnabled, setInfoDivEnabled] = useState(false);
 
   useEffect(() => {
     if (
@@ -46,11 +49,17 @@ function App() {
 
   return (
     <div className="wrapper">
-
       <SideMenu
         inputEl={inputEl}
         setBgColorEnabled={setBgColorEnabled}
         setBgColor={setBgColor}
+        setVisibility={setVisibility}
+        setInfoDivEnabled={setInfoDivEnabled}
+      />
+
+      <InfoDiv
+        infoDivEnabled={infoDivEnabled}
+        setInfoDivEnabled={setInfoDivEnabled}
       />
 
       <div
@@ -63,7 +72,7 @@ function App() {
         <h2 className="h2-title">Type a password to check</h2>
         <input
           className="input"
-          type={input_visibility.invisible}
+          type={visibility ? "text" : "password"}
           style={{
             backgroundColor: inputColor,
             transition: "background-color 0.3s ease-in-out",

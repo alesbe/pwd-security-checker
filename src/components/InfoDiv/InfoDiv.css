@@ -1,0 +1,35 @@
+#info-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 500px;
+  z-index: 10;
+  background-color: whitesmoke;
+  border: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+#info-div-top {
+  text-align: right;
+  margin-top: 10px;
+}
+
+#separator {
+  height: 10px;
+}
+
+.menu-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#info-div-text {
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { bg_colors } from '../../data'
+import { bg_colors, input_visibility } from '../../data'
 import './SideMenu.css'
 
-export const SideMenu = ({ inputEl, setBgColorEnabled, setBgColor }) => {
+export const SideMenu = ({ inputEl, setBgColorEnabled, setBgColor, setVisibility, setInfoDivEnabled }) => {
   // Menu states
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -34,6 +34,22 @@ export const SideMenu = ({ inputEl, setBgColorEnabled, setBgColor }) => {
             }}
           >
             Toggle background color
+          </a>
+          <a
+            className="side-menu-item"
+            onClick={() => {
+              setVisibility((prevBool) => !prevBool);
+            }}
+          >
+            Toggle password visibility
+          </a>
+          <a
+            className="side-menu-item"
+            onClick={() => {
+              setInfoDivEnabled((prevBool) => !prevBool);
+            }}
+          >
+            How to improve my password?
           </a>
         </div>
       )}

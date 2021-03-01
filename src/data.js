@@ -29,14 +29,16 @@ const input_state = {
 };
 
 const input_visibility = {
-  invisible: "password",
-  visible: "text",
+  true: "password",
+  false: "text",
 };
 
 const lowercase = [..."abcdefghijklmnopqrstuvwxyz"];
 const uppercase = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 const numbers = [..."1234567890"];
 const special_chars = [..."@.-_"];
+
+const all = lowercase.concat(uppercase, numbers, special_chars);
 
 export {
   colors,
@@ -47,4 +49,5 @@ export {
   uppercase,
   numbers,
   special_chars,
+  all
 };

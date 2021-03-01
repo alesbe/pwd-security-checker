@@ -6,6 +6,7 @@ import {
   uppercase,
   numbers,
   special_chars,
+  all
 } from "../data";
 
 export function checkPassword(
@@ -23,6 +24,16 @@ export function checkPassword(
     setInputState(input_state.default);
     bgColorEnabled && setBgColor(bg_colors.default);
     return;
+  }
+  
+  // Check invalid character
+  for (let i = 0; i < pwd_text.length; i++) {
+    if(!all.includes(pwd_text[i])){
+      setInputColor(colors.default);
+      setInputState(input_state.invalid);
+      bgColorEnabled && setBgColor(bg_colors.invalid);
+      return;
+    }
   }
 
   // Check >8 chars
