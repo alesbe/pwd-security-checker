@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/alesbe/pwd-security-checker/static/css/main.e29e5768.chunk.css",
+    "main.js": "/alesbe/pwd-security-checker/static/js/main.ac2bcc81.chunk.js",
+    "main.js.map": "/alesbe/pwd-security-checker/static/js/main.ac2bcc81.chunk.js.map",
+    "runtime-main.js": "/alesbe/pwd-security-checker/static/js/runtime-main.d24c10f2.js",
+    "runtime-main.js.map": "/alesbe/pwd-security-checker/static/js/runtime-main.d24c10f2.js.map",
+    "static/js/2.a2428540.chunk.js": "/alesbe/pwd-security-checker/static/js/2.a2428540.chunk.js",
+    "static/js/2.a2428540.chunk.js.map": "/alesbe/pwd-security-checker/static/js/2.a2428540.chunk.js.map",
+    "index.html": "/alesbe/pwd-security-checker/index.html",
+    "static/css/main.e29e5768.chunk.css.map": "/alesbe/pwd-security-checker/static/css/main.e29e5768.chunk.css.map",
+    "static/js/2.a2428540.chunk.js.LICENSE.txt": "/alesbe/pwd-security-checker/static/js/2.a2428540.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d24c10f2.js",
+    "static/js/2.a2428540.chunk.js",
+    "static/css/main.e29e5768.chunk.css",
+    "static/js/main.ac2bcc81.chunk.js"
+  ]
+}
